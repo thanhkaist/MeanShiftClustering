@@ -4,15 +4,20 @@ from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import style
+import time
 
 style.use("ggplot")
-
 centers = [[1,1,1],[5,5,5],[3,10,10]]
 
-X, y = make_blobs(n_samples = [100,100,100], centers = centers, cluster_std = 1.5)
+X, y = make_blobs(n_samples = [100,100,100], centers = centers, cluster_std = 1)
 
 ms = MeanShift()
+begin_time = time.time()
 ms.fit(X)
+end_time = time.time()
+
+print("Total time (s)", end_time- begin_time)
+
 
 labels = ms.labels_
 cluster_centers = ms.cluster_centers_
