@@ -1,3 +1,12 @@
+''' Time test
+Num data | cpu | Time 
+300         1     0.4s
+300         8     1.46s 
+3000        1     5.7s
+3000        8     3.55s
+30000       8     73.10s 
+'''
+
 import numpy as np 
 from sklearn.cluster import MeanShift
 from sklearn.datasets import make_blobs
@@ -30,7 +39,7 @@ X = torch.tensor(X)
 y = torch.tensor(y)
 
 begin_time = time.time()
-cluster_centers, labels = mean_shift_pytorch(X,8)
+cluster_centers, labels = mean_shift_pytorch(X,1)
 end_time = time.time()
 
 print("Total time (s)", end_time- begin_time)
