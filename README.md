@@ -14,8 +14,19 @@ Implement mean shift clustering  from numpy + toy example with sklearn library
 
 Statistic: 
 
-|      |      mean-shift-np      | mean-shift-sklean                   |
+|      |mean-shift-np (300p)     | mean-shift-sklean(300p)             |
 |:----:|:-----------------------:|-------------------------------------|
 | Time | 30.02 s                 | 0.5 s                               |
-| Note | No use matrix operator  | Auto bandwidth Parallel with n_jobs |
+| Note | No use matrix operator  | Auto bandwidth\\ Parallel with n_jobs |
+
+mean-shift-pytorch time statistic
+
+| No data | cpus | time    |
+|---------|------|---------|
+| 300     | 1    | 0.4s    |
+| 300     | 8    | 1.46s   |
+| 3000    | 1    | 5.7s    |
+| 3000    | 8    | 3.55s   |
+| 30000   | 1    | 136.87s |
+| 30000   | 8    | 73.10s  |
 
