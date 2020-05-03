@@ -12,6 +12,7 @@ max_iter            10               300
 check_converge      No               Yes
 auto_bw             No               Yes
 
+=> Direction to go: C version https://github.com/Sydney-Informatics-Hub/GPUnoCUDA
 '''
 import math
 import operator
