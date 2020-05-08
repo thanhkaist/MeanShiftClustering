@@ -1,10 +1,11 @@
 # Mean Shift Clusstering
-Implement mean shift clustering  from numpy + toy example with sklearn library
+Implement mean shift cluster from numpy + sklearn + GPU-pytorch
 
 - mean-shift.py: numpy implementation for data with 2 dimension
 - mean-shift-np.py: numpy implementation for data with 3 dimension  
 - mean-shift-sklearn.py: toy example using sklearn.MeanShift
 - mean-shift-pytorch.py: mean shift api for pytorch
+- mean-shift-pytorch-gpu.py: mean shift api with pytorch and gpu support
 
 Statistic: 
 
