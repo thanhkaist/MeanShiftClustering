@@ -7,14 +7,14 @@ Implement mean shift cluster from numpy + sklearn + GPU-pytorch
 - mean-shift-pytorch.py: mean shift api for pytorch
 - mean-shift-pytorch-gpu.py: mean shift api with pytorch and gpu support
 
-Statistic: 
+## Statistic: 
 
 |      |mean-shift-np (300p)     | mean-shift-sklean(300p)             |
 |:----:|:-----------------------:|-------------------------------------|
 | Time | 30.02 s                 | 0.5 s                               |
 | Note | No use matrix operator  | Auto bandwidth\\ Parallel with n_jobs |
 
-mean-shift-pytorch time statistic
+## Mean-shift-pytorch time statistic
 
 | No data | cpus | time    |
 |---------|------|---------|
@@ -25,6 +25,7 @@ mean-shift-pytorch time statistic
 | 30000   | 1    | 136.87s |
 | 30000   | 8    | 73.10s  |
 
+### Visualization on toy datasets
 
 ![result1](fig/3class1.png)
 
